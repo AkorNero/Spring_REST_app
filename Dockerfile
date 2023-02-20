@@ -1,4 +1,4 @@
 FROM openjdk:8
-ADD C:\Users\10692645\.jenkins\workspace\Docker_Test\private-eye-server\target\private-eye-server-0.0.1-SNAPSHOT.war canvas.war
-ENTRYPOINT ["java", "-jar","canvas.war"]
+ADD /var/jenkins_home/.m2/repository/com/lti/ZSBProject1/0.0.1-SNAPSHOT/ZSBProject1-0.0.1-SNAPSHOT.jar canvas.jar
+ENTRYPOINT ["java", "-jar","/canvas.jar"]
 EXPOSE 8080
